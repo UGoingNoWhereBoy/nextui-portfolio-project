@@ -79,7 +79,7 @@ return (
             
         </Link> : null}
             
-         {customButton == true ? <Button bordered rounded color={'gradient'}>Current page</Button> : null}
+         {customButton == true ? <Button bordered rounded color={'gradient'} css={{marginLeft:'$6'}}>Current page</Button> : null}
          </Container>
      
      
