@@ -39,7 +39,7 @@ const Cards = () => {
     <Customcard cardpicture={NextUI} cardtitle='Vite/NextUI' cardurl={'https://youtu.be/JgBTV2cjlOY'}
     iconone={<SiVite /> } icontwo={<TbBrandNextjs />} iconthree={<MdOutlineVideoSettings />} iconfour={<MdOutlineAddReaction />}
     content1={"ViteJs"} content2={"NextUI"} content3={"React Video-Player"} content4={"React-Icons"}
-    customButton={true} customPadding={'$15'}/>
+    customButton={true} customPadding={'$15'} githublink='https://github.com/UGoingNoWhereBoy/nextui-portfolio-project.git'/>
 
 
     <Customcard cardpicture={Django} cardtitle='Python/Django' cardurl={'https://youtu.be/-wTwW2EVaUc'}
