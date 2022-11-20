@@ -38,8 +38,7 @@ content1,content2,content3,content4,content5,content6, customButton, githubButto
 return (
 
    
-  <Card css={{marginTop:'$12', marginBottom:'$12', backgroundImage:`url(${cardpicture})`, backgroundAttachment:'fixed',
-  backgroundRepeat:'no-repeat',backgroundSize:'cover'}} id='0'> 
+  <Card css={{marginTop:'$12', marginBottom:'$12', }} id='0'> 
 
    <Card.Header css={{flexWrap:'wrap', flexDirection:'column'}}>
 
