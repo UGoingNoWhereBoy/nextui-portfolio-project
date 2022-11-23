@@ -4,7 +4,7 @@ import { TbBrandNextjs, TbBrandTailwind } from 'react-icons/tb';
 import { SiMongodb, SiFormstack,SiHiveBlockchain,SiScrutinizerci, SiDjango} from 'react-icons/si'
 import { MdOutlineAddReaction, MdOutlineVideoSettings } from 'react-icons/md'
 import { AiOutlineApi, AiFillHtml5 } from 'react-icons/ai'
-import { FaPython } from 'react-icons/fa'
+import { FaPython, FiServer} from 'react-icons/fa'
 import { SiVite } from 'react-icons/si'
 import { DiReact, DiCss3 } from 'react-icons/di'
 
@@ -12,6 +12,17 @@ import { DiReact, DiCss3 } from 'react-icons/di'
 const Cards = () => {
   return (
     <>
+
+  <Customcard  cardtitle='Firebase/NextJs' cardurl={'https://youtu.be/GGd3RNcWlt4'}
+     githublink='https://github.com/UGoingNoWhereBoy/Firebase-NextJs-todo-App.git'
+     iconone={<TbBrandNextjs />}  icontwo={<SiFirebase />} 
+     iconthree={<SiFormstack />} iconfour={<MdOutlineAddReaction />} iconsix={<FiServer />}
+     content1='Nextjs/NextUI' content2='Firebase-Auth/Firestore' content3='Formik/Yup' 
+     content4='React-Icons' content6='Full crud operations'
+     githubButton={true} liveDemoLink={'https://eyadstodoapp.netlify.app/'} customPadding={'$9'}/>
+
+
+
     <Customcard  cardtitle='NextJS/Next-Auth' cardurl={'https://youtu.be/mVUmS8U1UYM'}
      githublink='https://github.com/UGoingNoWhereBoy/nextjs-auth-project.git'
      iconone={<TbBrandNextjs />}  icontwo={<TbBrandTailwind />} 
