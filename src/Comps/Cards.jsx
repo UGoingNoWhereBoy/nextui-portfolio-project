@@ -1,10 +1,11 @@
 import React from 'react'
 import Customcard from './Customcard'
 import { TbBrandNextjs, TbBrandTailwind } from 'react-icons/tb';
-import { SiMongodb, SiFormstack,SiHiveBlockchain,SiScrutinizerci, SiDjango} from 'react-icons/si'
+import { SiMongodb, SiFormstack,SiHiveBlockchain,SiScrutinizerci, SiDjango, SiFirebase} from 'react-icons/si'
 import { MdOutlineAddReaction, MdOutlineVideoSettings } from 'react-icons/md'
 import { AiOutlineApi, AiFillHtml5 } from 'react-icons/ai'
-import { FaPython, FiServer} from 'react-icons/fa'
+import { FaPython} from 'react-icons/fa'
+import { FiServer } from 'react-icons/fi'
 import { SiVite } from 'react-icons/si'
 import { DiReact, DiCss3 } from 'react-icons/di'
 
@@ -19,7 +20,7 @@ const Cards = () => {
      iconthree={<SiFormstack />} iconfour={<MdOutlineAddReaction />} iconsix={<FiServer />}
      content1='Nextjs/NextUI' content2='Firebase-Auth/Firestore' content3='Formik/Yup' 
      content4='React-Icons' content6='Full crud operations'
-     githubButton={true} liveDemoLink={'https://eyadstodoapp.netlify.app/'} customPadding={'$9'}/>
+     githubButton={true} liveDemo={true} liveDemoLink={'https://eyadstodoapp.netlify.app/'} customPadding={'$9'}/>
 
 
 
