@@ -17,9 +17,9 @@ const Cards = () => {
     <Customcard  cardtitle='Firebase/NextJs' cardurl={'https://youtu.be/GGd3RNcWlt4'}
      githublink='https://github.com/UGoingNoWhereBoy/Firebase-NextJs-todo-App.git'
      iconone={<TbBrandNextjs />}  icontwo={<SiFirebase />} 
-     iconthree={<SiFormstack />} iconfour={<MdOutlineAddReaction />} iconsix={<FiServer />}
+     iconthree={<SiFormstack />} iconfour={<MdOutlineAddReaction />} iconfive={<FiServer />}
      content1='Nextjs/NextUI' content2='Firebase-Auth/Firestore' content3='Formik/Yup' 
-     content4='React-Icons' content6='Full crud operations'
+     content4='React-Icons' content5='Full crud operations'
      githubButton={true} liveDemo={true} liveDemoLink={'https://eyadstodoapp.netlify.app/'} customPadding={'$9'}/>
 
 
