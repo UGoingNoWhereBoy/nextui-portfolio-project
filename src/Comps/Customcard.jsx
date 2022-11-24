@@ -72,13 +72,13 @@ return (
         </Link> : null}
         {liveDemo == true ?
             <Link  href={liveDemoLink} target={'_blank'} css={{paddingLeft:'$6'}}>
-            <Button css={{fontSize:'$lg', paddingLeft:'$6'}} icon={<CgMediaLive fill="currentColor" />} color="secondary" flat>
+            <Button css={{fontSize:'$lg', marginTop:'$8'}} icon={<CgMediaLive fill="currentColor" />} color="secondary" flat>
                 Live Demo
             </Button>
             
         </Link> : null}
             
-         {customButton == true ? <Button bordered rounded color={'gradient'} css={{marginLeft:'$6'}}>Current page</Button> : null}
+         {customButton == true ? <Button bordered rounded color={'gradient'} css={{marginTop:'$8'}}>Current page</Button> : null}
          </Container>
      
      
