@@ -65,20 +65,20 @@ return (
          <Container css={{paddingTop:'$4', display:'flex', padding:'$4'}}>
         {githubButton == true ?
             <Link  href={githublink} target={'_blank'}>
-            <Button css={{fontSize:'$lg', paddingRight:'$2'}} icon={<FaGithub fill="currentColor" />} color="primary" flat>
+            <Button css={{fontSize:'$lg', paddingRight:'$2', marginBottom:'$8', marginRight:'$2'}} icon={<FaGithub fill="currentColor" />} color="primary" flat>
                 View on Github
             </Button>
             
         </Link> : null}
         {liveDemo == true ?
             <Link  href={liveDemoLink} target={'_blank'} css={{paddingLeft:'$6'}}>
-            <Button css={{fontSize:'$lg', marginTop:'$8'}} icon={<CgMediaLive fill="currentColor" />} color="secondary" flat>
+            <Button css={{'@sm':{marginTop:'$0'},'@xs':{marginTop:'-10px'}, fontSize:'$lg'}} icon={<CgMediaLive fill="currentColor" />} color="secondary" flat>
                 Live Demo
             </Button>
             
         </Link> : null}
             
-         {customButton == true ? <Button bordered rounded color={'gradient'} css={{marginTop:'$8'}}>Current page</Button> : null}
+         {customButton == true ? <Button bordered rounded color={'gradient'} css={{'@sm':{marginTop:'$0', marginLeft:'$0'},'@xs':{marginTop:'$1', marginLeft:'$4'}}}>Current page</Button> : null}
          </Container>
      
      
