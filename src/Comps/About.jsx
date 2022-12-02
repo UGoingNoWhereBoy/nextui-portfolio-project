@@ -16,10 +16,19 @@ const About = () => {
         </Card.Header>
         <Card.Body css={{display:'flex', 'flexDirection':'row', justifyContent:'center'}}>
           <Text size={20} weight={'bold'}>
-            Hey, im Eyad a 20 years old self taught programmer, my journey started 6 months ago give or take,
-            faced countless errors,bugs and loved solving them on my own by looking up the docs or google and sometimes youtube but i never copy and paste code and move on,
-            first i understand the issue, write the solution as it is see what ive done wrong and then i re-write it the way i see fits my app,
-            sometimes it can be really hard and i get stuck hours but the feeling once i make it work my way makes it worth it.
+          Hi , im a 20 year old programmer
+
+            My journey started 6-7 months ago
+
+            I wont say what level i am for any of my skills 
+            Because I don’t know how i would rate my self
+            You can see my projects and judge me based on them
+
+            The way i learn something is just reading the docs 
+            Watch a basic tutorial if its needed then starting building a project with it without any help besides google and stackoverflow 
+
+
+
             <Text color='secondary' size={20} weight={'bold'}>
               All projects on my profile made only by me from scracth i would never copy others projects and make it my own, You're welcome to use my code as long you give credits.</Text>
               <Text size={20} color='error'>I Used NextUI for this page and it might have some bugs and thats because NextUI still in beta and minority of people use it, so there are only few sources and people talking about the issues </Text>
