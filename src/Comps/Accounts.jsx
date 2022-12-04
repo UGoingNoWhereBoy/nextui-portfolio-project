@@ -75,7 +75,7 @@ const Accounts = () => {
             </Card>
         </Grid>
         <Spacer x={2}/>
-        <Grid  css={{minWidth:'330px', marginBottom:'$12'}}>
+        <Grid  css={{minWidth:'330px', marginBottom:'$12', marginTop:'$8'}}>
             <Card css={{mw: '330px'}} isHoverable>
                 <Card.Header>
                   <Avatar css={{'marginLeft':'auto', 'marginRight':'auto'}} src={Steam}></Avatar>  
@@ -97,6 +97,7 @@ const Accounts = () => {
                 
             </Card>
         </Grid>
+        <Spacer x={2}/>
     </Container>
  
   )
