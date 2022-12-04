@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Card, Link, Button, Text, Tooltip, Container, Grid, css} from "@nextui-org/react";
+import { Card, Link, Button, Text, Tooltip, Container, Grid, Popover} from "@nextui-org/react";
 import { FaGithub } from 'react-icons/fa';
 import { CgMediaLive } from 'react-icons/cg'
 import ReactPlayer from 'react-player/youtube'
@@ -7,7 +7,7 @@ import ReactPlayer from 'react-player/youtube'
 
 
 const Customcard = ({cardtitle, cardpicture, cardurl, githublink, iconone,icontwo,iconthree,iconfour,iconfive,iconsix,
-content1,content2,content3,content4,content5,content6, customButton, githubButton, liveDemo, customPadding, liveDemoLink}) => {
+content1,content2,content3,content4,content5,content6, customButton, githubButton, liveDemo, customPadding, liveDemoLink, description}) => {
  
   const Icons = [
     <Tooltip content={content1}>
@@ -46,11 +46,21 @@ return (
 
            <Text css={{textGradient: "45deg, $purple600 -20%, $pink600 100%",
             '@xsMax':{fontSize:'26px'}, '@xs':{fontSize:'50px'}}}>{cardtitle}</Text>
-           
+             <Popover placement={'bottom'}>
+            <Popover.Trigger>
+              <Button css={{width:'200px', ml:'auto', mr:'auto', mb:'$4'}} bordered color="secondary">{'Note'}</Button>
+            </Popover.Trigger>
+            <Popover.Content>
+              <Text css={{ p: "$10" }}>
+                {description}
+              </Text>
+            </Popover.Content>
+          </Popover>
+            
            </Card>
-           
            <Grid css={{marginLeft:'auto', marginTop:'auto', marginBottom:'auto', width:'300px' ,'@xs':{width:'500px', '@sm':{width:'800px'}}}}>
                <ReactPlayer controls url={cardurl} light={true}  pip={true} width={'100%'} stopOnUnmount={false}/>
+
            </Grid>
    </Card.Header>
 

@@ -4,6 +4,7 @@ import { FaSteam } from 'react-icons/fa'
 import Github from '../assets/github.png'
 import Discord from '../assets/discord.png'
 import Linkedin from '../assets/linkedin.png'
+import Steam from '../assets/steam.png'
 
 const Accounts = () => {
   return (
@@ -74,6 +75,28 @@ const Accounts = () => {
             </Card>
         </Grid>
         <Spacer x={2}/>
+        <Grid  css={{minWidth:'330px', marginBottom:'$12'}}>
+            <Card css={{mw: '330px'}} isHoverable>
+                <Card.Header>
+                  <Avatar css={{'marginLeft':'auto', 'marginRight':'auto'}} src={Steam}></Avatar>  
+                 
+                </Card.Header>
+                <Text h3 css={{"textAlign": 'center'}}>Steam</Text>
+                <Text h5 css={{"textAlign": 'center'}}>UGoingNoWhereBoy</Text>
+                <Card.Body>
+                      <Link css={{marginLeft:'auto', marginRight:'auto'}}
+                      href='https://steamcommunity.com/profiles/76561199161141214/' target={'_blank'}>
+                    
+                        <Button color="gradient" css={{width:'250px'}}>
+                            Game with me
+                        </Button>
+                        </Link>
+                
+               
+                </Card.Body>
+                
+            </Card>
+        </Grid>
     </Container>
  
   )

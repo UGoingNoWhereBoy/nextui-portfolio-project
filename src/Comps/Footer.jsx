@@ -6,7 +6,7 @@ const Footer = () => {
     <Container css={{textAlign:'center'}}>
         <Card>
             <Grid css={{padding:'$8'}}>
-                All rights reserved  @UGoingNoWhereBoy
+                All rights reserved  @Eyad
             </Grid>
         </Card>
     </Container>

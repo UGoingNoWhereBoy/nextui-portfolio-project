@@ -20,7 +20,8 @@ const Cards = () => {
      iconthree={<SiFormstack />} iconfour={<MdOutlineAddReaction />} iconfive={<FiServer />}
      content1='Nextjs/NextUI' content2='Firebase-Auth/Firestore' content3='Formik/Yup' 
      content4='React-Icons' content5='Full crud operations'
-     githubButton={true} liveDemo={true} liveDemoLink={'https://eyadstodoapp.netlify.app/'} customPadding={'$9'}/>
+     githubButton={true} liveDemo={true} liveDemoLink={'https://eyadstodoapp.netlify.app/'} customPadding={'$9'} 
+     description={'querying data from firebase is painful'}/>
 
 
 
@@ -30,7 +31,8 @@ const Cards = () => {
      iconthree={<SiMongodb />} iconfour={<MdOutlineAddReaction />} iconfive={<SiFormstack />} iconsix={<AiOutlineApi />}
      content1='Nextjs/NextAuth' content2='Tailwindcss' content3='MongodDB' 
      content4='React-Icons' content5='Formik and Yup' content6='Api Usage'
-     githubButton={true} customPadding={'$9'}/>
+     githubButton={true} customPadding={'$9'}
+     description={'getServerSideProps is just annoying'}/>
 
 
     <Customcard  githubButton={true} liveDemo={true}
@@ -40,20 +42,23 @@ const Cards = () => {
      iconfive={<MdOutlineAddReaction />} iconsix={<AiOutlineApi />}
      content1={"ReactJs" }content2={"Tailwindcss"} content3={"Web3 Provider"} 
      content4={"Sanity.io"} content5={'React-Icons'} content6={"Api Usage"} customPadding={'$9'}
-     liveDemoLink={"https://ugoingnowhereboy.netlify.app/"}/>
+     liveDemoLink={"https://ugoingnowhereboy.netlify.app/"}
+     description={'Easy enough'}/>
 
 
 
     <Customcard  cardtitle='Vite/NextUI' cardurl={'https://youtu.be/JgBTV2cjlOY'}
     iconone={<SiVite /> } icontwo={<TbBrandNextjs />} iconthree={<MdOutlineVideoSettings />} iconfour={<MdOutlineAddReaction />}
     content1={"ViteJs"} content2={"NextUI"} content3={"React Video-Player"} content4={"React-Icons"}
-    customButton={true} customPadding={'$15'} githublink='https://github.com/UGoingNoWhereBoy/nextui-portfolio-project.git' githubButton={true}/>
+    customButton={true} customPadding={'$15'} githublink='https://github.com/UGoingNoWhereBoy/nextui-portfolio-project.git'
+    githubButton={true} description={'NextUI looks good but its really full of errors, and painful to use'}/>
 
 
     <Customcard  cardtitle='Python/Django' cardurl={'https://youtu.be/-wTwW2EVaUc'}
     githublink='https://github.com/UGoingNoWhereBoy/Django-Project.git'
     iconone={<FaPython />} icontwo={<SiDjango />} iconthree={<AiFillHtml5 />} iconfour={<DiCss3 />}
-    content1={"Python"} content2={"Django"} content3={"Html"} content4={"CSS"} githubButton={true} customPadding={'$15'}/>
+    content1={"Python"} content2={"Django"} content3={"Html"} content4={"CSS"} githubButton={true} customPadding={'$15'}
+    description={"No JS used for this one, Pretty good"}/>
     </>
   )
 }

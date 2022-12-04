@@ -12,26 +12,22 @@ const About = () => {
     <Container css={{margin:'$12'}} id='2'>
       <Card isHoverable>
         <Card.Header css={{'justifyContent':'center'}}>
-            <Text size={25} css={{'@xs':{fontSize:'$4xl'}, '@sm':{fontSize:'$7xl'},}} color='error'>My journey</Text>
+            <Text size={25} css={{'@xs':{fontSize:'$4xl'}, '@sm':{fontSize:'$7xl'},}} color='error'>journey</Text>
         </Card.Header>
         <Card.Body css={{display:'flex', 'flexDirection':'row', justifyContent:'center'}}>
           <Text size={20} weight={'bold'}>
-          Hi , im a 20 year old programmer
+           Thank you for visitng my portfolio,
+            Im Eyad a 20 year's old programmer started this journey 7 months ago,
+            i won't show a "Skills" section i think its useless because in this field you always don't know everything,
+            i just learn by bulding projects , fall into a tons of errors 
+            solve them, and publish my project , i always love to learn new stuff and build a new project with them,
+            you can see each project what tech stack i used by hovering over the icons or clicking them if you're on a mobile,
 
-            My journey started 6-7 months ago
-
-            I wont say what level i am for any of my skills 
-            Because I don’t know how i would rate my self
-            You can see my projects and judge me based on them
-
-            The way i learn something is just reading the docs 
-            Watch a basic tutorial if its needed then starting building a project with it without any help besides google and stackoverflow 
-
-
+           <Text color="primary" size={40}>My coding loop </Text> see new technology > watch a tutorial about the basics > start building a project with them 
+            > getting tired of the errors > get back on and finish the project 
 
             <Text color='secondary' size={20} weight={'bold'}>
-              All projects on my profile made only by me from scracth i would never copy others projects and make it my own, You're welcome to use my code as long you give credits.</Text>
-              <Text size={20} color='error'>I Used NextUI for this page and it might have some bugs and thats because NextUI still in beta and minority of people use it, so there are only few sources and people talking about the issues </Text>
+              All projects on my profile made only by me from scracth, You're welcome to use my code as long you give credits :).</Text>
 
            </Text>
         </Card.Body>
