@@ -38,7 +38,7 @@ const Nav = () => {
   const navItems = [
     "Projects",
     "Accounts",
-    "Journey",
+    "About",
   ]
 
 
