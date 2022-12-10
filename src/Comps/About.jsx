@@ -12,7 +12,7 @@ const About = () => {
     <Container css={{margin:'$12'}} id='2'>
       <Card isHoverable>
         <Card.Header css={{'justifyContent':'center'}}>
-            <Text size={25} css={{'@xs':{fontSize:'$4xl'}, '@sm':{fontSize:'$7xl'},}} color='error'>journey</Text>
+            <Text size={25} css={{'@xs':{fontSize:'$4xl'}, '@sm':{fontSize:'$7xl'},}}>About</Text>
         </Card.Header>
         <Card.Body css={{display:'flex', 'flexDirection':'row', justifyContent:'center'}}>
           <Text size={20} weight={'bold'}>
