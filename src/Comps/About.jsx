@@ -16,12 +16,11 @@ const About = () => {
         </Card.Header>
         <Card.Body css={{display:'flex', 'flexDirection':'row', justifyContent:'center'}}>
           <Text size={20} weight={'bold'}>
-           Thank you for visitng my portfolio,
-            Im Eyad a 20 year's old programmer started this journey 7 months ago,
-            i won't show a "Skills" section i think its useless because in this field you always don't know everything,
-            i just learn by bulding projects , fall into a tons of errors 
-            solve them, and publish my project , i always love to learn new stuff and build a new project with them,
-            you can see each project what tech stack i used by hovering over the icons or clicking them if you're on a mobile,
+           Im Eyad a 20 years old, in the past few months ive worked really hard to get here ,
+           ive learnt a lot , struggled a lot , googled a lot.
+           for my projects i aim to make each one with unique new tech ive learnt ,
+           every project i publish here is a good project with new ideas which took  a lot of effort
+           i just love computer software and always wanting to learn more and im just getting started
            </Text>
         </Card.Body>
       </Card>
