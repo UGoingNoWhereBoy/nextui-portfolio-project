@@ -43,7 +43,7 @@ const Cards = () => {
      content1={"ReactJs" }content2={"Tailwindcss"} content3={"Web3 Provider"} 
      content4={"Sanity.io"} content5={'React-Icons'} content6={"Api Usage"} customPadding={'$9'}
      liveDemoLink={"https://ugoingnowhereboy.netlify.app/"}
-     description={'Easy enough'}/>
+     description={"With this project i learnt Reactjs, Tailwindcss, Apis"}/>
 
 
 
