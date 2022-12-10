@@ -22,13 +22,6 @@ const About = () => {
             i just learn by bulding projects , fall into a tons of errors 
             solve them, and publish my project , i always love to learn new stuff and build a new project with them,
             you can see each project what tech stack i used by hovering over the icons or clicking them if you're on a mobile,
-
-           <Text color="primary" size={40}>My coding loop </Text> see new technology > watch a tutorial about the basics > start building a project with them 
-            > getting tired of the errors > get back on and finish the project 
-
-            <Text color='secondary' size={20} weight={'bold'}>
-              All projects on my profile made only by me from scracth, You're welcome to use my code as long you give credits :).</Text>
-
            </Text>
         </Card.Body>
       </Card>
