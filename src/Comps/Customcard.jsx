@@ -38,7 +38,7 @@ content1,content2,content3,content4,content5,content6, customButton, githubButto
     </Tooltip>,
         
   ]
-  
+
 
 return (
 
@@ -64,12 +64,15 @@ return (
             
            </Card>
            <Grid css={{marginLeft:'auto', marginTop:'auto', marginBottom:'auto', width:'300px' ,'@xs':{width:'500px', '@sm':{width:'800px'}}}}>
-           {isReady ? null  :
-              <SkeletonTheme baseColor='#000' highlightColor='#262626'>
+           {isReady ? <ReactPlayer controls url={cardurl} 
+            pip={true} width={'100%'} onReady={() => Setready(true)} stopOnUnmount={true}/>
+            : <SkeletonTheme baseColor='#000' highlightColor='#262626'>
                <Skeleton count={1} width={800} height={400} />
-               </SkeletonTheme>
+               <ReactPlayer controls url={cardurl} 
+               pip={true} width={'0%'} height={'0%'} onReady={() => Setready(true)} stopOnUnmount={true}/>
+              </SkeletonTheme>
                }
-               <ReactPlayer controls url={cardurl}  pip={true} width={'100%'} onReady={() => Setready(true)} stopOnUnmount={false}/>
+               
            </Grid>
     </Card.Header>
 

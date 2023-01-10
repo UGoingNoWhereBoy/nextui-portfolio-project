@@ -14,7 +14,7 @@ const Cards = () => {
   return (
     <>
 
-  <Customcard  cardtitle='NextJs/Sanity.io' cardurl={'https://youtu.be/v1qwT48IhYU'}
+  <Customcard  cardtitle='NextJs/Sanity.io' cardurl={'https://youtu.be/OQxmILGB2YE'}
      
      iconone={<TbBrandNextjs />}  icontwo={<SiStripe />}
      iconthree={<FaCcStripe />} iconfour={<SiTailwindcss />} 
