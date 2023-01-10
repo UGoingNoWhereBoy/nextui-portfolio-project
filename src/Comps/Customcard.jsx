@@ -1,14 +1,19 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Card, Link, Button, Text, Tooltip, Container, Grid, Popover} from "@nextui-org/react";
 import { FaGithub } from 'react-icons/fa';
-import { CgMediaLive } from 'react-icons/cg'
+import { HiStatusOnline } from 'react-icons/hi'
 import ReactPlayer from 'react-player/youtube'
+import { useState } from 'react';
+import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css'
 
 
 
-const Customcard = ({cardtitle, cardpicture, cardurl, githublink, iconone,icontwo,iconthree,iconfour,iconfive,iconsix,
+const Customcard = ({cardtitle, isPrivate, cardurl, githublink, iconone,icontwo,iconthree,iconfour,iconfive,iconsix,
 content1,content2,content3,content4,content5,content6, customButton, githubButton, liveDemo, customPadding, liveDemoLink, description}) => {
- 
+
+  const [isReady, Setready] = useState(false)
+
   const Icons = [
     <Tooltip content={content1}>
       {iconone}
@@ -59,10 +64,14 @@ return (
             
            </Card>
            <Grid css={{marginLeft:'auto', marginTop:'auto', marginBottom:'auto', width:'300px' ,'@xs':{width:'500px', '@sm':{width:'800px'}}}}>
-               <ReactPlayer controls url={cardurl} light={true}  pip={true} width={'100%'} stopOnUnmount={false}/>
-
+           {isReady ? null  :
+              <SkeletonTheme baseColor='#000' highlightColor='#262626'>
+               <Skeleton count={1} width={800} height={400} />
+               </SkeletonTheme>
+               }
+               <ReactPlayer controls url={cardurl}  pip={true} width={'100%'} onReady={() => Setready(true)} stopOnUnmount={false}/>
            </Grid>
-   </Card.Header>
+    </Card.Header>
 
        <Card.Body>
 
@@ -80,9 +89,17 @@ return (
             </Button>
             
         </Link> : null}
+        {isPrivate == true ?
+            <Tooltip content='Private Repo'>
+              <Button disabled  css={{fontSize:'$lg', paddingRight:'$2', marginBottom:'$8', marginRight:'$2'}} icon={<FaGithub fill="currentColor" />} color="primary" flat>
+                  View on Github
+              </Button>
+            </Tooltip>
+            
+        : null}
         {liveDemo == true ?
             <Link  href={liveDemoLink} target={'_blank'} css={{paddingLeft:'$6'}}>
-            <Button css={{'@sm':{marginTop:'$0'},'@xs':{marginTop:'-10px'}, fontSize:'$lg'}} icon={<CgMediaLive fill="currentColor" />} color="secondary" flat>
+            <Button css={{'@sm':{marginTop:'$0'},'@xs':{marginTop:'-10px'}, fontSize:'$lg'}} icon={<HiStatusOnline fill="currentColor" />} color="secondary" flat>
                 Live Demo
             </Button>
             

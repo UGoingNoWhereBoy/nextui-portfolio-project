@@ -87,7 +87,7 @@ const Accounts = () => {
                       <Link css={{marginLeft:'auto', marginRight:'auto'}}
                       href='https://steamcommunity.com/profiles/76561199161141214/' target={'_blank'}>
                     
-                        <Button color="gradient" css={{width:'250px'}}>
+                        <Button color="gradient" ghost css={{width:'250px'}}>
                             Game with me
                         </Button>
                         </Link>

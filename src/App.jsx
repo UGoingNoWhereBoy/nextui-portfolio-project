@@ -1,11 +1,8 @@
 import * as React from 'react';
 import Nav from './Comps/Nav';
-import { NextUIProvider } from '@nextui-org/react';
-import { Container, Card, Row, Text, Avatar, Grid } from "@nextui-org/react";
+import { Container, Text,  Grid } from "@nextui-org/react";
 import Accounts from './Comps/Accounts';
-import About from './Comps/About';
 import Footer from './Comps/Footer';
-import Customcard from './Comps/Customcard';
 import Cards from './Comps/Cards';
 
 
@@ -29,8 +26,6 @@ const App = () => {
         <Cards />
 
         <Accounts />
-
-        <About />
 
         <Footer />
 

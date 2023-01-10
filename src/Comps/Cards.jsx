@@ -1,10 +1,10 @@
 import React from 'react'
 import Customcard from './Customcard'
 import { TbBrandNextjs, TbBrandTailwind } from 'react-icons/tb';
-import { SiMongodb, SiFormstack,SiHiveBlockchain,SiScrutinizerci, SiDjango, SiFirebase} from 'react-icons/si'
+import { SiMongodb, SiFormstack,SiHiveBlockchain,SiScrutinizerci, SiDjango, SiFirebase, SiTailwindcss, SiStripe, SiReactos} from 'react-icons/si'
 import { MdOutlineAddReaction, MdOutlineVideoSettings } from 'react-icons/md'
 import { AiOutlineApi, AiFillHtml5 } from 'react-icons/ai'
-import { FaPython} from 'react-icons/fa'
+import { FaCcStripe, FaPython} from 'react-icons/fa'
 import { FiServer } from 'react-icons/fi'
 import { SiVite } from 'react-icons/si'
 import { DiReact, DiCss3 } from 'react-icons/di'
@@ -13,6 +13,19 @@ import { DiReact, DiCss3 } from 'react-icons/di'
 const Cards = () => {
   return (
     <>
+
+  <Customcard  cardtitle='NextJs/Sanity.io' cardurl={'https://youtu.be/v1qwT48IhYU'}
+     
+     iconone={<TbBrandNextjs />}  icontwo={<SiStripe />}
+     iconthree={<FaCcStripe />} iconfour={<SiTailwindcss />} 
+     iconfive={<SiReactos />}
+     content1='Nextjs' content2='Sanity.io' content3='Stripe' 
+     content4='TailwindUi/Tailwindcss' content5='React context'
+     githubButton={false} isPrivate={true} liveDemo={true} liveDemoLink={'https://eyads-ecommerce.vercel.app'} customPadding={'$9'} 
+     description={'My biggest project so far, a fully functional e-commerce website'}/>
+
+
+
 
     <Customcard  cardtitle='Firebase/NextJs' cardurl={'https://youtu.be/GGd3RNcWlt4'}
      githublink='https://github.com/UGoingNoWhereBoy/Firebase-NextJs-todo-App.git'
@@ -58,7 +71,7 @@ const Cards = () => {
     githublink='https://github.com/UGoingNoWhereBoy/Django-Project.git'
     iconone={<FaPython />} icontwo={<SiDjango />} iconthree={<AiFillHtml5 />} iconfour={<DiCss3 />}
     content1={"Python"} content2={"Django"} content3={"Html"} content4={"CSS"} githubButton={true} customPadding={'$15'}
-    description={"No JS used for this one, Pretty good"}/>
+    description={"This was my first big project"}/>
     </>
   )
 }
